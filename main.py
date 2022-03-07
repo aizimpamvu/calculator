@@ -17,12 +17,15 @@ operations={
   "/":divide,
 }
 
+"""Adding Recursive to the program"""
 def calculator():
   num1=float(input("What's the first number? " ))
   for symbol in operations:
     print(symbol)
-  
+  """Setting flag"""
   should_continue=True
+
+  """Loop to control our program to run many times"""
   while should_continue:
     operation_symbol=input("Pick an operation  ")
     num2=float(input("What's the next number? " ))
